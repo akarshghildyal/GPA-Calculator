@@ -6,7 +6,7 @@
 
 ## 🧠 What is GPA Calculator
 
-GPA Calculator is a simple tool that instantly reads your grades in `evarsity.srmist.edu.in`, calculates your GPA, and displays it right below the table so you don’t have to leave the page or do any extra math.  
+GPA Calculator is a simple tool that instantly reads your grades in `evarsity.srmist.edu.in`, calculates your GPA, and displays it right below the table so you don’t have to leave the page or do any extra effort.  
 > **Note:** Results are now published directly on student portal, hence this does not work.
 
 ## 🌱 Why I Built This
