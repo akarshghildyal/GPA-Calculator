@@ -13,7 +13,6 @@ const grade_points = {
     "*": 0
 };
 
-// Function to calculate GPA
 function calculateGPA() {
     console.log('calculateGPA function called');
     const table = document.getElementById('table1');
@@ -27,7 +26,7 @@ function calculateGPA() {
     let totalCredits = 0;
     let totalPoints = 0;
 
-    for (let i = 1; i < rows.length; i++) { // Start from 1 to skip the header row
+    for (let i = 1; i < rows.length; i++) { 
         const cells = rows[i].getElementsByTagName('td');
         if (cells.length >= 8) {
             const credit = parseFloat(cells[4].innerText);
@@ -47,15 +46,15 @@ function calculateGPA() {
 
     const newRow = table.insertRow();
     const cell1 = newRow.insertCell(0);
-    cell1.colSpan = 9; // Adjust the colspan to cover all columns
+    cell1.colSpan = 9;
     cell1.style.textAlign = 'center';
-    cell1.style.fontSize = '20px'; // Increase font size
-    cell1.style.fontWeight = 'bold'; // Make the text bold
+    cell1.style.fontSize = '20px'; 
+    cell1.style.fontWeight = 'bold'; 
     cell1.innerHTML = `GPA = <span style="color: red;">${gpa.toFixed(2)}</span>`;
     console.log('GPA row added to the table');
 }
 
-// Automatically run calculateGPA when the content script is loaded
+
 window.addEventListener('load', () => {
     console.log('Window loaded, checking for table1');
     const interval = setInterval(() => {
